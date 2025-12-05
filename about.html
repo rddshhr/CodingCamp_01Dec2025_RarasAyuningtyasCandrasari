@@ -4,90 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--HEADER SECTION-->
     <table class="header" width="100%">
         <tr>
             <td align="left">
                 <img src="/images/logo konnect.png" width="80px" alt="Konnect Logo."/>
             </td>
             <td align="right">
-                <th><a href="index.html">Home</a></th>
-                <th><a href="about.html">About Us</a></th>
-                <th><a href="portofolio.html">Portofolio</a></th>
-                <th><a href="#contact">Contact</a></th>
+                <th><a href="index.html" class="navigation">Home</a></th>
+                <th><a href="about.html" class="navigation">About Us</a></th>
+                <th><a href="portofolio.html" class="navigation">Portofolio</a></th>
+                <th><a href="#contact" class="navigation">Contact</a></th>
         </tr>
     </table>
+    <br/>
+
+<div class="main-container">
+    <!--ABOUT CONTENT-->
+    <div class="about-container">
     <table width="100%">
         <tr>
             <td align="left">
-                <h1>Who We Are</h1>
-                <p>Konnect is an Indonesia-based local travelling company dedicated to providing authentic local experiences to travelers. Our mission is to connect tourists with the rich culture, traditions, and hidden gems of Indonesia through personalized travel experiences.</p>
-                <p><b>Welcome to Konnect, where every journey tells a story.</b></p>
+                <h1 class="about-title">Who We Are</h1>
+                <p class="about-content">Konnect is an Indonesia-based local travelling company dedicated to providing authentic local experiences to travelers. Our mission is to connect tourists with the rich culture, traditions, and hidden gems of Indonesia through personalized travel experiences.</p>
+                <p class="about-content"><b>Welcome to Konnect, where every journey tells a story.</b></p>
             </td>
             <td align="right">
                 <img src="images/localpeople.jpg" width="300px" alt="Local people of Indonesia."/>
         </tr>
     </table>    
-<hr/>
+    </div>
+    <br/>
 
-<h1>Our Goals</h1>
-<hr/>
+<!-- GOALS, VISION AND MISSION SECTION -->
+<div class="about-container">
+<h1 class="goal-title">Our Goals</h1>
+</div>
+<img class="gambar-baru" src="/images/warung.png" width="1200px"alt="Local store of Indonesia."/>
 
-<h2>Vision</h2>
-<p>To be the leading local travel company in Indonesia, renowned for delivering unforgettable and immersive travel experiences that celebrate the diversity and beauty of our country.
-    <h2>Mission</h2>
-    <ul>
+<div class="about-container">
+<h2 class="goal-subtitle">Vision</h2>
+<p class="about-content">To be the leading local travel company in Indonesia, renowned for delivering unforgettable and immersive travel experiences that celebrate the diversity and beauty of our country.
+    <h2 class="goal-subtitle">Mission</h2>
+    <ul class="about-content">
         <li>Provide safe, comfortable, and personalized travel services tailored to every traveler’s needs.</li>
         <li>Support local communities by promoting local destinations, culture, and small businesses throughout Indonesia.</li>
         <li>Deliver accurate, accessible, and user-friendly travel information through the Konnect digital platform.</li>
         <li>Build strong connections between travelers and local guides to create closer, more authentic travel experiences.</li>
         <li>Promote sustainable tourism by encouraging responsible travel that respects Indonesia’s nature and cultural heritage.</li>
     </ul>
+    </div>
 <hr/>
-     <table width="100%">
-        <tr>
-            <td align="left">
-                <h2>Contact Us</h2>
-                <p id="contact"></p>
-                <section class="grid grid-cols-2 gap-6 p-6">
-                <div class="bg-blue-100 p-4">
-                 <form>
-                <label>Name :</label>
-                <input type="text" placeholder="Write your name..."/>
-                <br/>
-                <label>Date of Birth :</label>
-                <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{2}\/\d{2}\/\d{4}"/>
-                <br/>
-                <label>Gender :</label>
-                <input type="radio" value="male" name="gender">Male
-                <input type="radio" value="female" name="gender">Female
-                <br/>
-                <label>Comment :</label>
-                <br/>
-                <textarea rows="5" cols="30" placeholder="Write your comment here..."></textarea>
-                <br/>
-                <input type="checkbox"/> I agree with the terms and conditions.
-                <br/>
-                <button type="submit">Send</button>
-                </form>
-                </div>
-            </td>
-            <td align="right">
-                 <div class="bg-green-100 p-4">
-            <form>
-                <label><i>Current time :</i></label> <br/>
-                <label>Name :</label> <br/>
-                <label for ="birthdate">Date of Birth :</label> 
-                <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{2}\/\d{2}\/\d{4}"/><br/>
-                <label>Gender :</label> <br/>
-                <label>Comment :</label> <br/>
-            </form>
-        </div>
-        </tr>
-    </table>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact-container">
+
+    <!-- CONTACT LEFT -->
+    <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to plan your next adventure?</p>
+        <p>Reach out to us! Let us guide you through the best destinations, hidden gems, and personalized itineraries to turn your travel dreams into reality.</p>
+    </div>
+
+    <!-- CONTACT RIGHT -->
+    <p id="contact"></p>
+    <div class="contact-right">
+        <form>
+            <label>Name :</label>
+            <input type="text" placeholder="Write your name here..." />
+
+            <label>Date of Birth :</label>
+            <input type="date" />
+
+            <label>Gender :</label>
+            <div class="gender">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Message :</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
     <hr/>
     <footer>
-    <p>© 2025 Konnect. All rights reserved.</p>
+    <p class="footer">© 2025 Konnect. All rights reserved.</p>
 </body>
 </html>

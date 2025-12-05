@@ -4,82 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!--HEADER SECTION-->
     <table class="header" width="100%">
         <tr>
             <td align="left">
                 <img src="/images/logo konnect.png" width="80px" alt="Konnect Logo."/>
             </td>
             <td align="right">
-                <th><a href="index.html">Home</a></th>
-                <th><a href="about.html">About Us</a></th>
-                <th><a href="portofolio.html">Portofolio</a></th>
-                <th><a href="#contact">Contact</a></th>
+                <th><a href="index.html" class="navigation">Home</a></th>
+                <th><a href="about.html" class="navigation">About Us</a></th>
+                <th><a href="portofolio.html" class="navigation">Portofolio</a></th>
+                <th><a href="#contact" class="navigation">Contact</a></th>
         </tr>
     </table>
-    <hr/>
-    
-    <hr/>
-    <h1>Our Journey</h1>
-    <p>At Konnect, we take pride in the memorable experiences we've crafted for our clients. Here are some highlights from our recent tours and adventures across Indonesia:</p>
+    <br/>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+    <h1 class="porto-title">Our Journey</h1>
+    <p class="porto-content">At Konnect, we take pride in the memorable experiences we've crafted for our clients. Here are some highlights from our recent tours and adventures across Indonesia:</p>
     <ul>
-        <li><b>Jakarta City Tour:</b> Explore the bustling capital city with visits to historical landmarks, vibrant markets, and cultural performances.</li>
-        <li><b>Yogyakarta Cultural Experience:</b> Immerse yourself in Javanese culture with traditional dance performances, batik workshops, and visits to ancient temples.</li>
-        <li><b>Bali Beach Getaway:</b> Relax on the pristine beaches of Bali, enjoy water sports, and experience the island's unique Hindu culture.</li>
-        <li><b>Medan Culinary Tour:</b> Savor the diverse flavors of Medan with guided food tours, cooking classes, and visits to local markets.</li>
+        <li class="porto-content"><b>Jakarta City Tour:</b> Explore the bustling capital city with visits to historical landmarks, vibrant markets, and cultural performances.</li>
+        <li class="porto-content"><b>Yogyakarta Cultural Experience:</b> Immerse yourself in Javanese culture with traditional dance performances, batik workshops, and visits to ancient temples.</li>
+        <li class="porto-content"><b>Bali Beach Getaway:</b> Relax on the pristine beaches of Bali, enjoy water sports, and experience the island's unique Hindu culture.</li>
+        <li class="porto-content"><b>Medan Culinary Tour:</b> Savor the diverse flavors of Medan with guided food tours, cooking classes, and visits to local markets.</li>
     </ul>
-    <h1>Gallery</h1>
-    <img src="images/gallery1.png" width="400px" alt="Famous temple in Bali."/>
-    <img src="images/gallery2.png" width="400px" alt="Hiking in Rinjani, Lombok."/>
-    <img src="images/gallery3.png" width="400px" alt="Rice field experience in Yogyakarta."/>
-    <img src="images/gallery4.png" width="400px" alt="Waterfall in West Java."/>
-    <img src="images/gallery5.png" width="400px" alt="Sunrise at Prau Mount, Central Java."/>
-    <img src="images/gallery6.png" width="400px" alt="Horse riding at Bromo, East Java."/>
     <hr/>
-         <table width="100%">
-        <tr>
-            <td align="left">
-                <h2>Contact Us</h2>
-                <p id="contact"></p>
-                <section class="grid grid-cols-2 gap-6 p-6">
-                <div class="bg-blue-100 p-4">
-                 <form>
-                <label>Name :</label>
-                <input type="text" placeholder="Write your name..."/>
-                <br/>
-                <label>Date of Birth :</label>
-                <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{2}\/\d{2}\/\d{4}"/>
-                <br/>
-                <label>Gender :</label>
-                <input type="radio" value="male" name="gender">Male
-                <input type="radio" value="female" name="gender">Female
-                <br/>
-                <label>Comment :</label>
-                <br/>
-                <textarea rows="5" cols="30" placeholder="Write your comment here..."></textarea>
-                <br/>
-                <input type="checkbox"/> I agree with the terms and conditions.
-                <br/>
-                <button type="submit">Send</button>
-                </form>
-                </div>
-            </td>
-            <td align="right">
-                 <div class="bg-green-100 p-4">
-            <form>
-                <label><i>Current time :</i></label> <br/>
-                <label>Name :</label> <br/>
-                <label for ="birthdate">Date of Birth :</label> 
-                <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{2}\/\d{2}\/\d{4}"/><br/>
-                <label>Gender :</label> <br/>
-                <label>Comment :</label> <br/>
-            </form>
-        </div>
-        </tr>
-    </table>
+
+    <!-- GALLERY SECTION -->
+    <h1 class="porto-title">Gallery</h1>
+    <div class="gallery-row">
+        <img src="images/gallery1.png" width="400px" alt="Famous temple in Bali."/>
+        <img src="images/gallery2.png" width="400px" alt="Hiking in Rinjani, Lombok."/>
+        <img src="images/gallery3.png" width="400px" alt="Rice field experience in Yogyakarta."/>
+    </div>
+    <div class="gallery-row">
+        <img src="images/gallery4.png" width="400px" alt="Waterfall in West Java."/>
+        <img src="images/gallery5.png" width="400px" alt="Sunrise at Prau Mount, Central Java."/>
+        <img src="images/gallery6.png" width="400px" alt="Horse riding at Bromo, East Java."/>
+    </div>
+    <hr/>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact-container">
+
+    <!-- CONTACT LEFT -->
+    <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to plan your next adventure?</p>
+        <p>Reach out to us! Let us guide you through the best destinations, hidden gems, and personalized itineraries to turn your travel dreams into reality.</p>
+    </div>
+
+    <!-- CONTACT RIGHT -->
+    <p id="contact"></p>
+    <div class="contact-right">
+        <form>
+            <label>Name :</label>
+            <input type="text" placeholder="Write your name here..." />
+
+            <label>Date of Birth :</label>
+            <input type="date" />
+
+            <label>Gender :</label>
+            <div class="gender">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Message :</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+ </div>
+<!-- FOOTER SECTION -->
     <hr/>
     <footer>
-    <p>© 2025 Konnect. All rights reserved.</p>
+    <p class="footer">© 2025 Konnect. All rights reserved.</p>
 </body>
 </html>
